@@ -1,0 +1,169 @@
+/* 
+ * Contact Page Styles
+ * Modern & interactive contact page design
+ */
+
+/* Variables */
+:root {
+  --primary-color: #4a6de5;
+  --primary-light: rgba(74, 109, 229, 0.1);
+  --primary-dark: #3a56b2;
+  --text-dark: #222831;
+  --text-light: #596172;
+  --light-bg: #f8fafc;
+  --white: #ffffff;
+  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s ease;
+  --border-radius: 12px;
+  --border-radius-lg: 24px;
+}
+
+/* Base Styles */
+.contact-page {
+  overflow-x: hidden;
+}
+
+/* Contact Form Area */
+.contact-section {
+  padding: 120px 0 80px;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-form-wrapper {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow);
+  padding: 40px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards 0.3s;
+}
+
+.contact-form__header {
+  margin-bottom: 30px;
+}
+
+.contact-form__title {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.contact-form__subtitle {
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.contact-form-container {
+  margin-top: 20px;
+}
+
+/* Form Controls with Floating Labels */
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  background-color: #f8fafc;
+  transition: var(--transition);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(74, 109, 229, 0.1);
+}
+
+.form-label {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 1rem;
+  color: var(--text-light);
+  transition: var(--transition);
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label,
+.form-textarea:focus ~ .form-label,
+.form-textarea:not(:placeholder-shown) ~ .form-label {
+  transform: translateY(-25px) scale(0.85);
+  padding: 0 5px;
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.form-input:focus::placeholder,
+.form-textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.form-submit {
+  position: relative;
+  margin-top: 20px;
+}
+
+.btn--submit {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--submit:hover,
+.btn--submit:focus {
+  background-color: var(--primary-dark);
+}
+
+.btn--submit::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  top: -150px;
+  left: -70px;
+  transform: rotate(35deg);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn--submit:hover::after {
+  left: 110%;
+}
