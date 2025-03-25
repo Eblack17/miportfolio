@@ -87,3 +87,106 @@ function initJourneyTabs() {
     });
   });
 }
+
+/**
+ * Add parallax effect to certain elements
+ * This enhances the visual appeal by creating depth through motion
+ */
+const parallaxElements = document.querySelectorAll('.about-hero__pattern, .journey-section__bg');
+
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.pageYOffset;
+  
+  parallaxElements.forEach(element => {
+    const topPosition = element.offsetTop;
+    const parallaxFactor = element.dataset.parallaxFactor || 0.3;
+    const distance = (scrollPosition - topPosition) * parallaxFactor;
+    
+    element.style.transform = `translateY(${distance}px)`;
+  });
+});
+
+/**
+ * Add hover interaction to skill cards
+ * Creates a subtle animation when hovering over skill cards
+ */
+const skillCards = document.querySelectorAll('.skill-card');
+
+skillCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    const icon = this.querySelector('.skill-card__icon');
+    
+    // Animate icon
+    icon.style.transform = 'scale(1.2)';
+    icon.style.transition = 'transform 0.3s ease';
+  });
+  
+  card.addEventListener('mouseleave', function() {
+    const icon = this.querySelector('.skill-card__icon');
+    
+    // Reset icon
+    icon.style.transform = 'scale(1)';
+  });
+});
+
+/**
+ * Add photo hover effect
+ * Enhances the interaction with the profile photo
+ */
+const photoWrapper = document.querySelector('.about-hero__photo-wrapper');
+const photo = document.querySelector('.about-hero__photo');
+
+if (photoWrapper && photo) {
+  photoWrapper.addEventListener('mouseenter', function() {
+    photo.style.transform = 'translate(10px, 10px)';
+    this.classList.add('hover');
+  });
+  
+  photoWrapper.addEventListener('mouseleave', function() {
+    photo.style.transform = 'translate(0, 0)';
+    this.classList.remove('hover');
+  });
+}
+
+/**
+ * Initialize counter animation for stats
+ * Animates the count up effect for the stats in the hero section
+ */
+function initCounters() {
+  const statNumbers = document.querySelectorAll('.about-hero__number');
+  
+  statNumbers.forEach(stat => {
+    const target = parseInt(stat.textContent);
+    const duration = 2000; // Animation duration in milliseconds
+    const stepTime = 50; // Time between steps in milliseconds
+    const steps = duration / stepTime;
+    const increment = target / steps;
+    let current = 0;
+    
+    const updateCounter = () => {
+      current += increment;
+      
+      if (current < target) {
+        stat.textContent = Math.ceil(current);
+        setTimeout(updateCounter, stepTime);
+      } else {
+        stat.textContent = target;
+      }
+    };
+    
+    // Start counter animation when the stat comes into view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(updateCounter, 500);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    
+    observer.observe(stat);
+  });
+}
+
+// Initialize counters when document is loaded
+document.addEventListener('DOMContentLoaded', initCounters); 
