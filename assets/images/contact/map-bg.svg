@@ -1,0 +1,30 @@
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#4a6de5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1440" height="800" fill="white"/>
+  <rect width="1440" height="800" fill="url(#dots)"/>
+  
+  <!-- Map elements -->
+  <path d="M360,200 L450,150 L520,180 L600,140 L650,200 L720,180 L800,220 L850,180 L920,200 L980,150 L1080,200" stroke="#4a6de5" stroke-width="1" opacity="0.1" fill="none"/>
+  
+  <path d="M300,250 L380,220 L420,280 L500,240 L560,300 L640,260 L700,320 L770,280 L830,330 L900,290 L950,350 L1000,290 L1080,320 L1140,280" stroke="#4a6de5" stroke-width="1" opacity="0.15" fill="none"/>
+  
+  <path d="M320,380 L400,340 L480,400 L550,350 L620,410 L680,360 L730,420 L800,370 L880,430 L950,380 L1020,440 L1100,390" stroke="#4a6de5" stroke-width="1" opacity="0.1" fill="none"/>
+  
+  <circle cx="720" cy="400" r="50" fill="#4a6de5" opacity="0.05"/>  
+  <circle cx="720" cy="400" r="15" fill="#4a6de5" opacity="0.2"/>  
+  <circle cx="720" cy="400" r="5" fill="#4a6de5" opacity="0.4"/>  
+  
+  <circle cx="500" cy="350" r="5" fill="#4a6de5" opacity="0.2"/>  
+  <circle cx="900" cy="450" r="5" fill="#4a6de5" opacity="0.2"/>  
+  <circle cx="600" cy="500" r="5" fill="#4a6de5" opacity="0.2"/>  
+  <circle cx="820" cy="300" r="5" fill="#4a6de5" opacity="0.2"/>  
+  
+  <rect x="670" y="350" width="100" height="100" rx="5" stroke="#4a6de5" stroke-width="1" opacity="0.05" fill="none"/>
+  
+  <path d="M0,600 Q360,520 720,600 Q1080,680 1440,600 L1440,800 L0,800 Z" fill="#4a6de5" opacity="0.02"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="1440" height="1600" viewBox="0 0 1440 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#4a6de5" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+    <pattern id="mediumGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" stroke="#4a6de5" stroke-width="1" opacity="0.1"/>
+    </pattern>
+    <pattern id="largeGrid" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="none" stroke="#4a6de5" stroke-width="1.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1440" height="1600" fill="url(#largeGrid)"/>
+  
+  <circle cx="200" cy="300" r="50" fill="#4a6de5" opacity="0.05"/>
+  <circle cx="1200" cy="600" r="80" fill="#4a6de5" opacity="0.03"/>
+  <circle cx="300" cy="900" r="100" fill="#4a6de5" opacity="0.02"/>
+  <circle cx="1100" cy="1200" r="70" fill="#4a6de5" opacity="0.04"/>
+  
+  <path d="M-100,200 Q280,400 720,300 Q1160,200 1540,400 L1540,1600 L-100,1600 Z" fill="#4a6de5" opacity="0.01"/>
+  <path d="M-100,600 Q280,800 720,700 Q1160,600 1540,800 L1540,1600 L-100,1600 Z" fill="#4a6de5" opacity="0.02"/>
+  <path d="M-100,1000 Q280,1200 720,1100 Q1160,1000 1540,1200 L1540,1600 L-100,1600 Z" fill="#4a6de5" opacity="0.01"/>
+  
+  <path d="M720,0 C620,200 620,400 720,600 C820,800 820,1000 720,1200 C620,1400 620,1600 720,1800" stroke="#4a6de5" stroke-width="2" opacity="0.03" fill="none"/>
+</svg>
