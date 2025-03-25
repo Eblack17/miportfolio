@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | John Doe - Graphic & Web Designer</title>
+    <meta name="description" content="About John Doe, a graphic designer and web designer with experience in branding, UI/UX, and print design.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="assets/fonts/primary-font.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.svg" width="180" height="auto" alt="Ebdesigns Logo"></a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="main-menu" class="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="projects.html" class="menu__link">Projects</a></li>
+                    <li class="menu__item menu__item--current"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero__pattern"></div>
+            <div class="container">
+                <div class="about-hero__content">
+                    <div class="about-hero__text">
+                        <span class="about-hero__label">About Me</span>
+                        <h1 class="about-hero__title">Designing digital <span class="text-highlight">experiences</span> that connect & inspire</h1>
+                        <p class="about-hero__desc">I'm John Doe, a passionate graphic and web designer with a mission to create beautiful, functional designs that solve problems and tell compelling stories.</p>
+                        
+                        <div class="about-hero__stats">
+                            <div class="about-hero__stat">
+                                <span class="about-hero__number">7+</span>
+                                <span class="about-hero__stat-label">Years Experience</span>
+                            </div>
+                            <div class="about-hero__stat">
+                                <span class="about-hero__number">80+</span>
+                                <span class="about-hero__stat-label">Projects Completed</span>
+                            </div>
+                            <div class="about-hero__stat">
+                                <span class="about-hero__number">40+</span>
+                                <span class="about-hero__stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-hero__photo-wrapper">
+                        <img src="assets/images/about/profile.jpg" alt="John Doe" class="about-hero__photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="about-story">
+            <div class="container">
+                <div class="about-story__grid">
+                    <div class="about-story__visual animate-on-scroll">
+                        <img src="assets/images/about/workspace.jpg" alt="Design workspace" class="about-story__image">
+                        <blockquote class="about-story__quote">
+                            Design is not just what it looks like and feels like. Design is how it works.
+                        </blockquote>
+                    </div>
+                    
+                    <div class="about-story__content animate-on-scroll">
+                        <h2 class="about-story__title">My Design Journey</h2>
+                        <p class="about-story__text">My design journey began at the University of Design Arts where I developed a strong foundation in traditional design principles. Since then, I've worked with agencies and direct clients across various industries, from tech startups to established retail brands.</p>
+                        
+                        <p class="about-story__text">I believe in the power of thoughtful design to solve problems, tell stories, and create meaningful connections. My approach combines strategic thinking with aesthetic sensibility to deliver results that are both beautiful and effective.</p>
+                        
+                        <p class="about-story__text">When I'm not designing, you can find me exploring photography, reading about design trends, or hiking in the mountains. These activities fuel my creativity and provide fresh perspectives that I bring back to my design work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-section__title">Skills & Expertise</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-window-maximize skill-card__icon"></i>
+                        <h3 class="skill-card__title">Web Design</h3>
+                        <p class="skill-card__description">Creating responsive, user-friendly websites that balance form and function. Experienced with modern web design principles and best practices.</p>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-mobile-screen skill-card__icon"></i>
+                        <h3 class="skill-card__title">UI/UX Design</h3>
+                        <p class="skill-card__description">Designing intuitive user interfaces and experiences that enhance usability and engagement. Skilled in wireframing, prototyping, and user testing.</p>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-pen-ruler skill-card__icon"></i>
+                        <h3 class="skill-card__title">Branding</h3>
+                        <p class="skill-card__description">Developing cohesive brand identities that effectively communicate a brand's values and personality. Includes logo design, color systems, typography, and brand guidelines.</p>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-print skill-card__icon"></i>
+                        <h3 class="skill-card__title">Print Design</h3>
+                        <p class="skill-card__description">Creating effective print materials from business cards to annual reports. Experienced with preparing files for commercial printing.</p>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-pen-nib skill-card__icon"></i>
+                        <h3 class="skill-card__title">Design Software</h3>
+                        <p class="skill-card__description">Proficient in industry-standard design tools including Adobe Creative Suite (Photoshop, Illustrator, InDesign), Figma, and Sketch.</p>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <i class="fa-solid fa-code skill-card__icon"></i>
+                        <h3 class="skill-card__title">Frontend Development</h3>
+                        <p class="skill-card__description">Working knowledge of HTML, CSS, and JavaScript, allowing for better collaboration with development teams and implementation of designs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section (Experience & Education) -->
+        <section class="journey-section">
+            <div class="journey-section__bg"></div>
+            <div class="container">
+                <h2 class="journey-section__title">My Professional Journey</h2>
+                
+                <div class="journey-tabs">
+                    <button class="journey-tab journey-tab--active" data-tab="experience">Experience</button>
+                    <button class="journey-tab" data-tab="education">Education</button>
+                </div>
+                
+                <div class="timeline-container" id="experience-timeline">
+                    <div class="timeline">
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-item__dot"></div>
+                            <div class="timeline-item__content">
+                                <div class="timeline-item__period">2022 - Present</div>
+                                <h3 class="timeline-item__title">Senior Designer</h3>
+                                <p class="timeline-item__company">Design Studio XYZ</p>
+                                <p class="timeline-item__description">Lead designer for key client projects, specializing in web design and branding. Mentor junior designers and collaborate with cross-functional teams to deliver comprehensive design solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-item__dot"></div>
+                            <div class="timeline-item__content">
+                                <div class="timeline-item__period">2019 - 2022</div>
+                                <h3 class="timeline-item__title">UI/UX Designer</h3>
+                                <p class="timeline-item__company">Tech Innovations Inc.</p>
+                                <p class="timeline-item__description">Designed user interfaces for web and mobile applications, conducted user research, and created prototypes. Collaborated with product managers and developers to implement user-centered design solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-item__dot"></div>
+                            <div class="timeline-item__content">
+                                <div class="timeline-item__period">2017 - 2019</div>
+                                <h3 class="timeline-item__title">Graphic Designer</h3>
+                                <p class="timeline-item__company">Creative Agency ABC</p>
+                                <p class="timeline-item__description">Created visual assets for print and digital media, including marketing materials, social media graphics, and website elements. Supported senior designers on branding projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-container" id="education-timeline" style="display: none;">
+                    <div class="timeline">
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-item__dot"></div>
+                            <div class="timeline-item__content">
+                                <div class="timeline-item__period">2013 - 2017</div>
+                                <h3 class="timeline-item__title">Bachelor of Fine Arts in Graphic Design</h3>
+                                <p class="timeline-item__company">University of Design Arts</p>
+                                <p class="timeline-item__description">Comprehensive education in design principles, typography, color theory, and digital media. Graduated with honors and a portfolio award.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-item__dot"></div>
+                            <div class="timeline-item__content">
+                                <div class="timeline-item__period">2020</div>
+                                <h3 class="timeline-item__title">UX Design Certification</h3>
+                                <p class="timeline-item__company">Design Institute</p>
+                                <p class="timeline-item__description">Specialized certification in user experience design methodologies, user research, and interaction design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title">What Clients Say</h2>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <p class="testimonial-card__quote">John's ability to understand our brand and translate it into a cohesive visual identity was exceptional. His designs have helped us establish a strong presence in our market.</p>
+                        <div class="testimonial-card__author">
+                            <img src="assets/images/about/client-1.jpg" alt="Sarah Johnson" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Sarah Johnson</span>
+                                <span class="testimonial-card__role">Marketing Director, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card animate-on-scroll">
+                        <p class="testimonial-card__quote">Working with John was a pleasure from start to finish. He listened to our needs, asked insightful questions, and delivered a website that exceeded our expectations.</p>
+                        <div class="testimonial-card__author">
+                            <img src="assets/images/about/client-2.jpg" alt="Michael Williams" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Michael Williams</span>
+                                <span class="testimonial-card__role">CEO, Innovate Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card animate-on-scroll">
+                        <p class="testimonial-card__quote">John's attention to detail and commitment to quality is unmatched. He transformed our outdated website into a modern, user-friendly platform that has significantly improved our online presence.</p>
+                        <div class="testimonial-card__author">
+                            <img src="assets/images/about/client-3.jpg" alt="Emily Chen" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Emily Chen</span>
+                                <span class="testimonial-card__role">Founder, Bloom Boutique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__content">
+                <p class="copyright">&copy; 2024 John Doe. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance">
+                        <img src="assets/icons/behance.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Dribbble">
+                        <img src="assets/icons/dribbble.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/about.js" defer></script>
+</body>
+</html>
