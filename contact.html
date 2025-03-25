@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | John Doe - Graphic & Web Designer</title>
+    <meta name="description" content="Get in touch with John Doe for creative design solutions. Reach out for project inquiries, collaborations, or questions.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico">
+</head>
+<body class="contact-page">
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.svg" width="180" height="auto" alt="John Doe Logo"></a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="main-menu" class="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="projects.html" class="menu__link">Projects</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu__item menu__item--current"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form__header">
+                            <h2 class="contact-form__title">Send a Message</h2>
+                            <p class="contact-form__subtitle">Fill out the form below and I'll get back to you within 24 hours.</p>
+                        </div>
+                        
+                        <div class="contact-form-container">
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                                    <label for="name" class="form-label">Name</label>
+                                    <span class="error-message" id="name-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                    <label for="email" class="form-label">Email</label>
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <span class="error-message" id="subject-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <textarea id="message" name="message" class="form-textarea" placeholder=" " required></textarea>
+                                    <label for="message" class="form-label">Message</label>
+                                    <span class="error-message" id="message-error"></span>
+                                </div>
+                                
+                                <div class="form-submit">
+                                    <button type="submit" class="btn--submit">Send Message</button>
+                                    <span class="form-submit__loader" aria-hidden="true"></span>
+                                </div>
+                                
+                                <div class="form-status" aria-live="polite"></div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info__content">
+                            <div class="contact-info__header">
+                                <h2 class="contact-info__title">Contact Information</h2>
+                                <p class="contact-info__subtitle">Prefer to reach out directly? Here's how you can contact me.</p>
+                            </div>
+                            
+                            <div class="contact-info__section">
+                                <h3 class="contact-info__section-title">Get in Touch</h3>
+                                <ul class="contact-list">
+                                    <li class="contact-list__item">
+                                        <div class="contact-list__icon">
+                                            <img src="assets/icons/email.svg" alt="" aria-hidden="true">
+                                        </div>
+                                        <div class="contact-list__content">
+                                            <span class="contact-list__label">Email</span>
+                                            <a href="mailto:hello@johndoe.com" class="contact-list__link">hello@johndoe.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="contact-list__item">
+                                        <div class="contact-list__icon">
+                                            <img src="assets/icons/location.svg" alt="" aria-hidden="true">
+                                        </div>
+                                        <div class="contact-list__content">
+                                            <span class="contact-list__label">Location</span>
+                                            <span class="contact-list__text">San Francisco, California</span>
+                                        </div>
+                                    </li>
+                                    <li class="contact-list__item">
+                                        <div class="contact-list__icon">
+                                            <img src="assets/icons/phone.svg" alt="" aria-hidden="true">
+                                        </div>
+                                        <div class="contact-list__content">
+                                            <span class="contact-list__label">Phone</span>
+                                            <a href="tel:+14155550123" class="contact-list__link">(415) 555-0123</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="contact-info__section">
+                                <h3 class="contact-info__section-title">Connect</h3>
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">LinkedIn</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Behance</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Dribbble</a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="#" class="social-list__link">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="contact-info__section">
+                                <h3 class="contact-info__section-title">Availability</h3>
+                                <p class="contact-info__text">I'm currently available for freelance projects and collaborations. My typical response time is within 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-subtitle">Here are answers to some common questions about my process, services, and working together.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-button">What is your design process like?</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>My design process typically follows these steps: (1) Discovery & Brief - where we discuss your goals and requirements, (2) Research & Strategy - analyzing your audience and competitors, (3) Concept Development - creating initial design concepts, (4) Refinement - iterating based on feedback, (5) Final Delivery - providing all necessary files and support. Throughout the process, I prioritize clear communication and collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">How much do your services cost?</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Pricing varies depending on the project scope, timeline, and specific requirements. I offer both project-based quotes and hourly rates. After our initial consultation, I'll provide a detailed proposal outlining all costs and deliverables. I'm transparent about pricing and won't surprise you with hidden fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">How long does a typical project take?</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Project timelines vary based on complexity and scope. A simple logo design might take 2-3 weeks, while a complete website design and development project could take 8-12 weeks. During our initial consultation, I'll provide a realistic timeline based on your specific project needs and any deadline requirements you may have.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">What information do you need to get started?</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>To begin, I'll need details about your business/project, target audience, competitors, project goals, and any existing brand materials. If you have specific ideas or references, those are helpful too. Don't worry if you don't have everything figured out—part of my job is to help guide you through the process and ask the right questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">Do you offer ongoing support after project completion?</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Yes! I believe in building ongoing relationships with clients. After project completion, I offer various support options including website maintenance packages, design tweaks, and consultation hours. Many clients choose to work with me on a retainer basis for consistent support and new design needs as they arise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-pattern"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-text">Let's collaborate to create something exceptional that elevates your brand and connects with your audience. The first step is just a message away.</p>
+                    <a href="#contact-form" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__content">
+                <p class="copyright">&copy; 2024 John Doe. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance">
+                        <img src="assets/icons/behance.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Dribbble">
+                        <img src="assets/icons/dribbble.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</body>
+</html>
